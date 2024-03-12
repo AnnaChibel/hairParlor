@@ -1,0 +1,187 @@
+<html>
+    <head>
+        
+        <meta name = "viewport" content = "width = device-width, initial - scale = 1.0">
+        <title>Hair Parlor</title>
+        
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link red = “stylesheet” href=“css/fontawesome/css/all.css”>
+        <link rel=“stylesheet” href=“css/main.css”>
+<script>
+    function myFunction(e) {
+      document.getElementById("chosenOption").innerHTML = e.target.selectedOptions[0].innerHTML;
+      
+    }
+    </script>
+    </head>
+    <body>
+        <section class = "top-banner">
+            <!------- refrence to the home page, also addd the image logo ------>
+            <nav>
+                <div class = "logo">
+                    <a href ="index.html"><img src="images/logoOUT.png"></a>
+                </div>
+               <!----<a href = "index.html"><img src = "images/logo.png"></a> ---> 
+                <div class = "nav-links">
+                    <ul>
+                        <li><a href = "index.html">HOME</a></li>
+                        <li><a href = "AboutIndex.html">ABOUT</a></li>
+                        <li><a href = "PricingIndex.html">PRICING</a></li>
+                        <li><a href = "">BOOK NOW</a></li>
+                    </ul>
+                </div>
+                </nav>
+    
+        </section>
+
+         <!---- Booking page -------->
+        <section class = "Booking">
+            <h1>MAKE A BOOKING</h1>
+                <div class="main">
+                <div class = "leftSide">
+                    <h2>HairParlor</h2>
+                    <div class="hoursBookingPage">
+                
+                        <p><b>MONDAY:</b> 9am - 5pm</p>
+                        <p><b>TUESDAY:</b> 9am - 5pm</p>
+                        <p><b>WEDNESDAY:</b> 9am - 5pm</p>
+                        <p><b>THURSDAY:</b> 9am - 5pm</p>
+                        <p><b>FRIDAY:</b> 9am - 5pm</p>
+                        <p><b>SATURDAY:</b> CLOSED</p>
+                        <p><b>SUNDAY:</b> By appointment only.</p>
+                        <h7>Entrance by appointment only</h7>
+                    </div>
+    
+                    <div class = "contactBookingPage">
+                        <h6><b>30 Crimson Road</b></h6>
+                        <p>Parnell, Auckland, 1015</p>
+                        <p><strong>Ph:</strong> 09 533 5903</p>
+                        <p><strong>Email:</strong> HairParlor@gmail.com</p>
+                    </div>
+
+                </div>
+
+                <div class = "rightSide">
+                    <h2>Select a service</h2>
+                    
+                    <div class = "select-container1">
+                        <select class ="select_box1" onchange="myFunction(event)">       
+                        <option value="">Foil Highlights ⤵ </option>
+                        <option value = first>Half Head | <il>from $65</il></option>
+                        <option value = second>Full Head | <il>from $100</il></option>
+                        
+                        </select>
+                    </div>
+                    <div class = "select-container2">
+                        <select class ="select_box2" onchange="myFunction(event)">       
+                        <option value="">Colour ⤵ </option>
+                        <option value = first>Extra Product | <il>from $55</il></option>
+                        <option value = second>Global Colour | <il>from $180</il></option>
+                        <option value = third>Root Retouch | <il>from $130</il></option>
+                        <option value = fourth>Express Root Retouch | <il>from $90</il></option>
+                        </select>
+                    </div>
+                    <div class = "select-container3">
+                        <select class ="select_box3" onchange="myFunction(event)">       
+                        <option value="">Cuts ⤵ </option>
+                        <option value = first>Women's Cut | <il>from $90</il></option>
+                        <option value = second>Men's Cut | <il>from $40</il></option>
+                        <option value = third>Kid's Cut | <il>from $30</il></option>
+                        </select>
+                    </div>
+                    <div class = "select-container4">
+                        <select class ="select_box4" onchange="myFunction(event)">       
+                        <option value="">Extensions ⤵ </option>
+                        <option value = first>Extension Re-tape | <il>from $50</il></option>
+                        <option value = second>Extension Removal | <il>from $55</il></option>
+                        <option value = third>Extension Tape - Reapplication | <il>from $100</il></option>
+                        </select>
+                    </div>
+                    <div class = "select-container5">
+                        <select class ="select_box5" onchange="myFunction(event)">       
+                        <option value="">Straightening ⤵ </option>
+                        <option value = first>Keratin Straightening | <il>from $420</il></option>
+                        <option value = second>Brazilian Blowout | <il>from $430</il></option>
+                        </select>
+                    </div>
+                    <div class = "select-container6">
+                        <select class ="select_box6" onchange="myFunction(event)">       
+                        <option value="">Styling ⤵ </option>
+                        <option value = first>After Colour Blow Dry | <il>from $45</il></option>
+                        <option value = second>Blow Wave | <il>from $40</il></option>
+                        </select>
+                    </div>
+                    <div class = "select-container7">
+                        <select class ="select_box7" onchange="myFunction(event)">       
+                        <option value="">Toner ⤵ </option>
+                        <option value = first>Toners | <il>from $55</il></option>
+                        </select>
+                    </div>
+        
+                    <div class = "bookingForm">
+                        <h3>Enter your Details</h3>
+                        <form action="" method="get" class="form-example">
+                            <div class="form_name">
+                              <label for="name">Enter your Name: </label>
+                              <input type="text" name="name" id="name" required />
+                            </div>
+                            <div class="form_email">
+                              <label for="email">Enter your Email: </label>
+                              <input type="email" name="email" id="email" required />
+                            </div>
+                            <div class="form_date">
+                                <label for="booking_date">Preferred Date and Time: </label>
+                                <input type="datetime-local" name="booking_date" id="booking_date" required />
+                              </div>
+                            <p><span>Your selected service is:     </span><span id = "chosenOption"></span></p>
+                            <div class="centered">
+                                <input type="submit" value="CONFIRM" class="form_btn"/>
+                            </div>
+                             
+                          </form>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+
+
+        </section>
+        
+        <!--------- Footer ---------->
+        <section class = "footer">
+  
+            <div class ="footer-tags">
+            
+                <div class = "icons">
+                    <h4>CONNECT WITH US</h4>
+                 <ul>
+                    <li><a href=""><i class = "fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class = "fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class = "fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class = "fa-brands fa-youtube"></i></a></li></li>
+                 </ul>
+                </div>
+            
+                <div class = "getInfo">
+                    <div class = "text">
+                    <h5>GET IN TOUCH</h5>
+                    <h6><strong>30 Crimson Road</strong></h6>
+                    <p>Parnell, Auckland, 1015</p>
+                    <p><strong>Ph:</strong> 09 533 5903</p>
+                    <p><strong>Email:</strong> HairParlor@gmail.com</p>
+                </div>
+                </div>
+                
+            </div>
+                <div class = "footer-copyR">
+                    <p>Copyright &copy;2024; Designed by Anna</p>
+                </div>
+            </section>
+    </body>
+</html>

@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+  font-family: 'Playfair Display', serif;
+ 
+}
+
+/*tbh i understand nothing but this is minute 8. */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    /* --padding: 2% 6%; ---*/
+    margin-bottom: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+/*fix how the image looks?*/
+nav img{
+    width: 150px;
+}
+.top-banner{
+    height: 110px;
+    background-color: #D2DDE9;
+    width: 100%;
+
+
+}
+.nav-links{
+    flex: 1; /*occupies all the space in the row*/
+    text-align: right; /*text will be on the right*/
+    width: 100%;
+    margin-top: 20px;
+}
+.nav-links ul li{
+    
+    list-style: none;
+    display: inline-block;
+    padding: 7px 20px;
+    text-align: right;
+    margin-block-start: 10px;
+    margin-inline-start: 55px;
+
+}
+/*remove underline*/
+.nav-links ul li a{
+    color: #72533E;
+    text-decoration: none;
+    font-size: 23px;
+}
+.nav-links ul li::after{ /*adds content or styling after the actual content of the list item*/
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8D694D;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    colour: #D9EAF9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*will be in the centre of this div*/
+    text-align: center;
+}
+.text-box h1{
+    font-size: 55px;
+    color: #72533E;
+
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 17px;
+    color: #64789B;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #8D694D;
+    border: 1px solid #8D694D;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 2px solid #EFEAE8;
+    background-color: #EFEAE8;
+    transition: 0.5s;
+}
+
+/*---chnaging the format of opening hours ---- */
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.line {
+    width: 95%;
+    padding: none;
+    margin: none;
+    border-color: #D9EAF9;
+    background-color: #D9EAF9;
+    height: 4px;
+    line-height: 5px;
+    margin: auto;
+
+}
+.Opening-text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: none;
+    color:#72533E;
+}
+.Opening-note{
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 45;
+    color: #736356;
+
+}
+
+.hours{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 40px;
+}
+.photo-column{
+   border-radius: 8px;
+   
+}
+.photo-column img{
+    width: 412px;
+    height: 330;
+    padding-bottom: 50px;
+    
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    line-height: 2;
+    margin-top: 40px;
+    padding-left: 50px;
+    
+}
+.text h7{
+    font-size: 11px;
+}
+
+.footer{
+    background-color: #EFEAE8;
+    width: 100%;
+    height: 100%;
+    
+}
+.footer-tags {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.icons{
+    width:50%;
+
+}
+
+.getInfo{
+    width:50%;
+    margin-top: -50px;
+    margin-left: auto;
+}
+.icons h4{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 40px;
+    color: #72533E;
+
+}
+.icons{
+    text-align: center;
+    font-size: 25px;
+    color:#72533E;
+}
+.icons ul li{
+  
+    margin-right: 20px;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;
+    margin-block-start: 10px;
+    margin-inline-start: 55px;
+    margin-top: 55px;
+
+    a i::before{
+        color: #525670;
+    }    
+}
+
+.getInfo h5{
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 40px;
+    color: #72533E;
+}
+
+.getInfo h6{
+    font-size: 18px;
+    color: #736356;
+}
+
+.getInfo p{
+    color: #736356;
+    font-size: 18px;
+}
+.footer-copyR p{
+    font-size: 8px;
+    text-align: center;
+    color: #a6bfd4;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    
+}
+
+/*------- Pricing Page-------*/
+
+section {
+    width: 98%;
+    margin: auto;
+}
+
+.Pricing h1{
+    text-align: center;
+    font-weight: 600;
+    color: #736356;
+    font-size: 57px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+    
+}
+
+.pricingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.itemContainer {
+    display: flex;
+    gap: 16px;
+    margin-left: 35px;
+    margin-bottom: 22px;
+}
+
+img {
+    width: 200px;
+    height: 235px;
+    
+}
+
+.text {
+    margin-top: 40px; 
+    color: #4c4f63;
+
+    .title {
+        font-weight: bold;
+    }
+    .price {
+        font-style: italic;
+
+        span {
+            font-weight: bold;
+            font-style: normal;
+        }
+    }
+}
+.Pricing h4{
+    text-align: center;
+    font-weight: 300;
+    color: #8D694D;
+    font-size: 13px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    
+}
+.text-box-btn{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.Pricebook-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #525670;
+    border: 1px solid #525670;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.Pricebook-btn:hover{
+    border: 2px solid #EFEAE8;
+    background-color: #EFEAE8;
+    transition: 0.5s;
+}
+
+.logo img{
+    width: 100px;
+    height: 100%;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+/* ------- ABOUT Page --------*/
+.About{
+    width: 100%;
+    height: auto;
+    background-color: #F7F7F7 ;
+}
+.About h1{
+    text-align: center;
+    font-weight: 600;
+    color: #736356;
+    font-size: 57px;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    
+}
+.FirstImgContainer{
+    display:flex;
+    gap: 16px;
+}
+.FirstImgContainer img{
+    border: 10px solid #D2DDE9;
+    margin-top: 40px;
+    margin-left: 120px;
+    width: 240px;
+    height: 240px;
+}
+.FirstImgContainer p{
+    text-align: center;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 90px;
+    color: #525670;
+}
+
+.SecondImgContainer{
+    display:flex;
+    gap: 16px;
+}
+.SecondImgContainer img{
+    border: 9px solid #DDC7B4;
+    margin-top: 20px;
+    margin-left: 115px;
+    width: 210px;
+    height: 210px;
+}
+.SecondImgContainer p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 60px;
+    padding-left: 110px;
+    color: #525670;
+}
+
+.ThirdImgContainer{
+    display:flex;
+    gap: 16px;
+}
+.ThirdImgContainer img{
+    border: 14px solid #8D694D;
+    margin-top: 50px;
+    margin-left: 160px;
+    width: 260px;
+    height: 260px;
+}
+.ThirdImgContainer p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-left: 160px;
+    color: #525670;
+}
+
+.FourthImgContainer{
+    display:flex;
+    gap: 16px;
+}
+.FourthImgContainer img{
+    border: 8px solid #D9EAF9;
+    margin-top: 60px;
+    margin-left: 300px;
+    width: 220px;
+    height: 220px;
+}
+.FourthImgContainer p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 110px;
+    margin-left: 130px;
+    color: #525670;
+}
+
+.FifthImgContainer{
+    display:flex;
+    gap: 16px;
+}
+.FifthImgContainer img{
+    border: 15px solid #736356;
+    margin-top: 30px;
+    margin-left: 90px;
+    width: 250px;
+    height: 250px;
+}
+.FifthImgContainer p{
+    text-align: center;
+    font-size: 18px;
+    margin-left: 200px;
+    margin-top: 110px;
+    color: #525670;
+}
+
+.About h2{
+    text-align: center;
+    font-weight: 400;
+    color: #72533E;
+    font-size: 19px;
+    margin-top: 60px;
+    padding-bottom: 60px;
+
+}
+/*------- Booking Page-------*/
+.Booking{
+    width: 100%;
+    height: auto;
+    background-color: #EEF2F9 ;
+}
+.Booking h1{
+    text-align: center;
+    font-weight: 600;
+    color: #736356;
+    font-size: 57px;
+    padding-top: 50px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+}
+
+.BookContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.leftSide h2{
+    text-align: center;
+    font-weight: 600;
+    color: #EFEAE8;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+.rightSide h2{
+    text-align: center;
+    font-weight: 600;
+    color: #D9EAF9;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
+}
+.hoursBookingPage{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    font-size: 17px;
+    line-height: 2.0;
+    color: #72533E;
+}
+
+ .contactBookingPage{
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-left: 50;
+    padding-bottom: 60px;
+    line-height: 2.0;
+    font-size: 17px;
+    color: #72533E;
+    
+}
+.contactBookingPage h6{
+    font-size: 19px;
+}
+
+.rightSide{
+    flex-basis: 40%;
+    background-color: #a6bfd4;
+
+    input:not(.form_btn) {
+        background-color: transparent;
+        border: 1px solid #D9EAF9;
+        border-radius: 4px;
+        width: 160px;
+        padding: 4px 8px;
+        color:#525670;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+
+.rightSide h3{
+    text-align: center;
+    font-weight: 600;
+    color: #736356;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.select-container1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 180px;
+    height: 40px;
+}
+.select_box1{
+    border: none;
+    appearance: none;
+    padding:0 8px 0 8px;
+    width: 100%;
+    color:#525670;
+    background-color:transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+.select-container2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 180px;
+    height: 40px;
+}
+.select_box2{
+    border: none;
+    appearance: none;
+    padding:0 8px 0 8px;
+    width: 100%;
+    color:#525670;
+    background-color:transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+.select-container3{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 180px;
+    height: 40px;
+}
+.select_box3{
+    border: none;
+    appearance: none;
+    padding:0 8px 0 8px;
+    width: 100%;
+    color:#525670;
+    background-color:transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+.select-container4{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 180px;
+    height: 40px;
+}
+.select_box4{
+    border: none;
+    appearance: none;
+    padding:0 8px 0 8px;
+    width: 100%;
+    color:#525670;
+    background-color:transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+.select-container5{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 180px;
+    height: 40px;
+}
+.select_box5{
+    border: none;
+    appearance: none;
+    padding:0 8px 0 8px;
+    width: 100%;
+    color:#525670;
+    background-color:transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+.select-container6{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 180px;
+    height: 40px;
+}
+.select_box6{
+    border: none;
+    appearance: none;
+    padding:0 8px 0 8px;
+    width: 100%;
+    color:#525670;
+    background-color:transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+.select-container7{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 180px;
+    height: 40px;
+}
+.select_box7{
+    border: none;
+    appearance: none;
+    padding:0 8px 0 8px;
+    width: 100%;
+    color:#525670;
+    background-color:transparent;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.main {
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 30px;
+
+    div:not(.centered) {
+        flex-basis: 45%;
+        margin-left: 30px;
+        margin-top: 30px;
+        margin-right: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+.leftSide{
+    background-color: #DDC7B4;
+}
+
+.rightSide{
+    background-color: #a6bfd4;
+}
+
+.bookingForm h3{
+    text-align: center;
+    color: #D9EAF9;
+    font-size: 25px;
+}
+
+.form_name label, .form_email label, .form_date label{
+    color:#525670;
+    font-size: 17px;
+}
+
+.bookingForm p{
+    text-align: left;
+    padding-top: 25px;
+    color: #525670;
+    padding-bottom:30px ;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.form_btn{
+    margin-top: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #525670;
+    border: 1px solid #525670;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.form_btn:hover{
+    border: 2px solid #D9EAF9;
+    background-color: #D9EAF9;
+    transition: 0.5s;
+}
